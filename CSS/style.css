@@ -1,0 +1,1827 @@
+*{
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #5E6282;
+    --secondary-color: #84829A; 
+  }
+  
+
+.home {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1440px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wave img{
+    text-align: center;
+}
+
+                /* Nav */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    position: relative;
+}
+
+
+.logo{
+    font-size: 2rem;    
+    font-family: inter,sans-serif;
+    font-weight: bolder;
+}
+
+.logo span{
+    background-color: #F1A501;
+}
+
+.nav-items{
+    width: 60%;
+    align-self: center;
+    z-index: 999;
+}
+
+
+.nav-items ul{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.nav-items li{
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    align-self: center;
+}
+
+.nav-items li a{
+    list-style: none;
+    text-decoration: none;
+    color: #212832;
+}
+
+
+.signUpBtn{
+    width: 100px;
+    padding: 10px 20px;
+    border: solid 1px black;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.signUpBtn:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.wave{
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -99;
+}
+
+                /* Header */
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .left{
+    margin-left: 6rem;
+    margin-top: 50px;
+}
+
+.header .left .text{
+    margin-top: 50px;
+}
+
+.header .left h6{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #DF6951;
+    margin-bottom: 1rem;
+}
+
+.header .left h1{
+    font-family: Volkhov;
+    font-weight: 700;
+    font-size: 70px;
+    color: #181E4B;
+    margin-bottom: 2rem;
+}
+
+.header .underline {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+.header .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 12px;
+    background-color: #e2654c;
+    border-radius: 50% 50% 0 0;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  
+
+.header .left p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+
+.header .left .btns{
+    display: flex;
+    gap:4rem;
+}
+
+
+.header .left .moreBtn {
+    padding: 1% 7%;
+    border-radius: 8px;
+    font-family: Google Sans;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #F1A501;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 15px 40px rgba(241, 165, 1, 0.6);
+}
+
+
+.header .left .demoBtn {
+    display: flex;
+    cursor: pointer;
+}
+
+.header .left .demoBtn i{
+    font-size: 3rem;
+    color: #DF6951;
+    box-shadow: 0px 10px 20px rgba(226, 107, 52, 0.1);
+
+}
+
+.header .left .demoBtn span{
+   align-self: center;
+   margin-left: 1.5rem;
+   color: #686D77;
+   font-family: Poppins;
+   font-weight: 400;
+   font-size: 17px;
+}
+
+
+
+.header .right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 7rem;
+    width: 50%;
+}
+
+.header .right .traveller{
+    position: relative;
+    z-index: 999;
+    width: 120%;
+}
+
+
+.left-plane{
+    position: relative;
+    left: 10%;
+    top: 100%;
+    transform: translateY(-40px);
+}
+
+.right-plane{
+    position: relative;
+    right: -5%;
+}
+
+.header .left {
+    flex: 1;
+}
+
+.header .right {
+    flex: 1;
+}
+
+.plane {
+    width: auto;
+    max-width: none;
+    height: auto;
+    align-self: self-start;
+    position: absolute;
+    top: 10%;    
+}
+
+
+                /* Category */
+
+
+.cat .intro{
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+    margin: 2%;
+    margin-top: 10%;
+}
+
+.section-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section-header h6{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-header h1{
+    font-family: Volkhov;
+    font-size: 50px;
+    font-weight: 700;
+    color: #14183E;
+}
+
+.cat .plus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 11%;
+    gap: 1rem;
+    color: #E5E5E5;
+}
+
+.cat .plus .red{
+    color: #FF7152;
+}
+
+.cat .plus .blue{
+    color: #6246E5;
+}
+
+.cat .plus .hide{
+    visibility: hidden;
+}
+
+.cat .empty{
+    width: 15%;
+}
+
+.servCards{
+    display: flex;
+    margin: 5%;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.servCards .card{
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    height: 60vh;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.servCards .card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    border-radius: 12%;
+  }
+
+.servCards .card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.servCards .card h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E1D4C;
+}
+
+.servCards .card h6{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+/* .flightCard .icon{
+    position: relative;
+}
+
+.eventCard .icon{
+    position: relative;
+}
+
+.custCard .icon{
+    position: relative;
+} */
+
+.flightCard{
+    padding: 1.5rem;
+}
+
+
+.flightCard img{
+    position: relative;
+    top: -23%;
+}
+
+.flightCard h4,
+.flightCard h6{
+    position: relative;
+    top: -33%;
+}
+
+.flightCard h6{
+    max-height: 78px;
+}
+
+.cardContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.cat .cardContainer .icon{
+    position: absolute;
+    bottom: -10%;
+    left: -20%;
+    z-index: -999;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s ease;
+}
+
+.cardContainer:hover .icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+                /* Destinations */
+                
+.destinations {
+    max-width: 1440px;
+    text-align: center;
+}
+
+.all-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.destinations .card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.1);
+    max-width: 290px;
+    text-align: left;
+    height: 440px;
+    transition: all 0.3s ease;
+}
+
+.destinations .card:hover {
+    transform: scale(1.05);
+}
+
+.destinations .card .img img {
+    display: block;
+    max-width: 100%;
+    height: 600px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.destinations .card .img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+
+}
+
+.destinations .card .text {
+    padding: 1rem;
+}
+
+.destinations .card .location {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.destinations .card .text h6 {
+    color: var(--primary-color);
+}
+
+.destinations .card .text h6 i{
+    color: black;
+    margin-right: 3%;
+}
+
+.destinations .decore{
+    display: flex;
+    position: relative;
+    bottom: 60%;
+    z-index: -99;
+}
+
+.destinations .decore img{
+    margin-left: 85%;
+}
+
+
+
+                /* Bookings */
+
+
+.bookings{
+    margin-top: 10%;
+}     
+
+.bookings .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bookings .container .left{
+        width: 40%;
+
+}
+
+.bookings .left h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.bookings .left h2{
+    font-family: Volkhov;
+    font-size: 50px;
+    font-weight: 700;
+    color: #14183E;
+    margin-top: 2%;
+}
+
+.bookings .process{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.bookings .process .full{
+    display: flex;
+    gap: 2rem;
+}
+
+.bookings .process .icon{
+    width: 47px;
+    height: 48px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookings .process .dest .icon{
+    background-color: #F0BB1F;
+}
+
+.bookings .process .payment .icon{
+    background-color: #F15A2B;
+}
+
+.bookings .process .airPort .icon{
+    background-color: #006380;
+}
+
+.bookings .process .left .text h5{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%;
+    color: var(--primary-color);
+}
+
+.bookings .process .left .text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+    color: var(--secondary-color);
+    width: 80%;
+}
+
+.bookings .right{
+    margin-top: 5%;
+}
+
+.bookings .right .card{
+    width: 370px;
+    height:400px;
+    background-color: white;
+    border-radius: 26px;
+    box-shadow: 
+    0px 25px 60px rgba(0, 0, 0, 0.1),    
+    70px -40px 60px rgba(127, 177, 252, 0.178);
+}
+
+.bookings .right .img{
+    display: flex;
+    justify-content: center;
+}
+
+.bookings .right img{
+    width: 321px;
+    height: 161px;
+    margin: 2rem;
+
+}
+
+.bookings .right .text{
+    margin: 0 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bookings .right .text h6{
+    font-size: 18px;
+    font-weight:400;
+    line-height: 125%;
+    letter-spacing: 1.5%;
+    color: #080809;
+}
+
+.bookings .right .text .f{
+    font-size: 16px;
+    font-weight:400;
+    line-height: 125%;
+    letter-spacing: 0.5%;
+    color: var(--secondary-color);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bookings .right .text .s{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.bookings .right .text .s i{
+    background-color: #F5F5F5;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+.bookings .right .text .t{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: start;
+    color: var(--secondary-color);
+}
+
+.bookings .right .text .t p{
+    font-size: 16px;
+    font-weight:400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    color: var(--secondary-color);
+}
+
+.bookings .right .text .t .fa-heart{
+    margin-left: auto;
+    width: 20px;
+    height: 18.58px;
+    color: #4152CA;
+}
+
+.bookings .right .card .mini-card{
+  width: 263px;
+  height: 129px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem; 
+  padding: 0.5rem;
+  border-radius: 18px;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  bottom: 42%;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+
+}   
+
+.bookings .right .card .mini-card img{
+  width: 50px;
+  height: 50px;
+  margin: 0; 
+  object-fit: cover; 
+}
+
+.bookings .right .card .mini-card h5{
+    font-size: 14px;
+    font-weight:400;
+    line-height: 125%;
+    letter-spacing: -3.5%;
+    color: var(--secondary-color);
+}
+
+.bookings .right .card .mini-card h3{
+    font-size: 18px;
+    font-weight:400;
+    line-height: 125%;
+    letter-spacing: -1.5%;
+    color: #080809;
+}
+
+.bookings .right .card .mini-card p{
+    font-size: 14px;
+    font-weight:400;
+    line-height: 125%;
+    letter-spacing: -5.5%;
+    color: #080809;
+}
+
+.bookings .right .card .mini-card p span{
+    color: #8A79DF;
+}
+
+.bookings .right .mini-card .progress-container {
+    width: 156px;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    height: 5px;
+    overflow: hidden;
+}
+
+  
+.bookings .right .mini-card .progress-bar {
+    height: 100%;
+    width: 73px;
+    transition: width 0.3s ease-in-out;
+    background-color: #8A79DF;
+}
+  
+.bookings .right .mini-card .text{
+    transform: translateX(-5px);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: translateX(-5px);
+
+}
+
+
+                /* Testimonials */
+
+
+.testimonial{
+    margin: 8%;
+}
+
+.testimonial .container{
+    display: flex;
+}
+
+.testimonial .left{
+    width: 40%;
+}
+
+.testimonial .left h6{
+    font-size: 18px;
+    font-weight:600;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.testimonial .left h1{
+    font-size: 50px;
+    font-weight:700;
+    letter-spacing: 0;
+    font-family: Volkhov;
+    color: #14183E;
+    margin-top: 4%;
+}
+
+.testimonial .left .dots{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.testimonial .left .dots p{
+    font-size: 80px;
+    color: #E5E5E5;
+}
+
+.testimonial .left .dots .black{
+    color: #080809;
+}
+
+.testimonial .right{
+    width: 100%;
+}
+
+.testimonial .right .card{
+    width: 504px;
+    height: 245px;
+    border-radius: 10px;
+    margin-left: 20%;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0px 80px 20px -30px rgba(0, 0, 0, 0.05);
+    background-color: #FFFFFF;
+    border: solid 1px #F7F7F7;
+    border-top: none;
+}
+
+.testimonial .right .card img{
+    position: absolute;
+    top: -35px;
+    left: -35px;
+}
+
+.testimonial .right .card .card-text{
+    margin: 1% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial .right .card .card-text p{
+    margin-top: 8%;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 32px;
+    color: var(--primary-color);
+}
+
+.testimonial .right .card .card-text h4{
+    margin-top: 12%;
+    font-size: 18px;
+    font-weight:600;
+    line-height: 100%;
+    color: var(--primary-color);
+}
+
+.testimonial .right .card .card-text h6{
+    margin-top: 1%;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 100%;
+    color: var(--primary-color);
+}
+
+.testimonial .right .card .inner-card{
+    width: 502px;
+    height: 232px;
+    border-radius: 10px;
+    border: solid 2px #F7F7F7;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: -99;
+}
+
+.testimonial .right .card .inner-card .text{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.testimonial .right .card .inner-card .text h4{
+    font-size: 18px;
+    font-weight:600;
+    line-height: 100%;
+    color: var(--primary-color);
+}
+
+.testimonial .right .card .inner-card .text h6{
+    margin-top: 10%;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 100%;
+    color: var(--primary-color);
+}
+
+.testimonial .right .arrow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 1rem;
+    height: 71.5px;
+    width: 14px;
+    margin-left: auto;
+    transform: translateY(190px);
+}
+
+.testimonial .right .arrow i{
+    margin:0;
+}
+
+.testimonial .right .arrow .fa-chevron-up{
+    color: #BCB7C2;
+    cursor: pointer;
+}
+
+.testimonial .right .arrow .fa-chevron-down{
+    color: #3E2E4D;
+}
+
+
+
+                /* Hotels */
+
+
+.hotels{
+    margin-top: 15%;
+}
+
+.hotels .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hotels .img img{
+    transition: all 0.6s ease;
+}
+
+.hotels .img img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 50px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+                /* Contacts */
+
+
+.contact{
+    margin: 1%;
+}
+
+.contact .card{
+    background-color: #F9F7FE;
+    margin: 7%;
+    height: 407px;
+    border-radius: 129px 20px 20px 20px;
+    position: relative;
+}
+
+.contact .card .content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contact .card .content h3{
+    font-size: 33px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.contact .card h3,
+.contact .card .form{
+    margin: 5%;
+}
+
+.contact .card .form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.email-input-wrapper {
+    position: relative;
+    width: fit-content;
+}
+  
+.email-input-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+}
+  
+.email-input-wrapper input {
+    padding-left: 30px; 
+    width: 421px;
+    height: 68px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.contact .form button{
+    width: 180px;
+    height: 68px;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF946D;
+    cursor: pointer;
+    color: white;
+}
+
+.contact .fa-paper-plane{
+    width: 70px;
+    height: 70px;
+    background-color: #5E3BE1;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+/* .contact .card .circle{
+    position: absolute;
+    left: 90%;
+    bottom: 60%;
+    rotate: 50;
+    overflow: hidden;
+}
+
+.contact .card .circle img{
+    transform: rotate(10deg);
+    overflow: hidden;
+} */
+
+.contact .card .plus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 13%;
+    gap: 1rem;
+    color: #E5E5E5;
+    position: absolute;
+    position: absolute;
+    right: -14%;
+    bottom: -15%;
+    transform: translateX(-50%);
+    z-index: -999;
+}
+
+.contact .card .plus .red{
+    color: #FF7152;
+}
+
+.contact .card .plus .blue{
+    color: #6246E5;
+}
+
+.contact .card .plus .hide{
+    visibility: hidden;
+}
+
+
+
+                /* Footer */
+
+            
+footer .container{
+    display: flex;
+    margin: 8%;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+footer .container .brand h2{
+    font-size: 44px;
+    font-weight:400;
+    line-height: 100%;
+    color: #181E4B;
+}
+
+footer .container .brand p{
+    font-size: 13px;
+    font-weight:400;
+    line-height: 125%;
+    color: var(--primary-color);
+    margin-top: 5%;
+    width: 60%;
+}
+
+footer .container h3{
+    font-size: 21px;
+    font-weight:700;
+    line-height: 125%;
+    color: #080809;
+}
+
+footer .container h6{
+    font-size: 18px;
+    font-weight:400;
+    line-height: 125%;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+footer .container .items{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+footer .container .app{
+    margin-top: 0.5rem;
+}
+
+footer .container .social .icon{
+    margin-left: -5%;
+}
+
+footer h5{
+    text-align: center;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 125%;
+    color: var(--primary-color);
+    margin: 5%;
+}
+
+
+
+        /* Media Queries for Tablet Sizes */
+
+@media(max-width: 768px) {
+
+
+     /* Nav */
+
+
+     nav {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .nav-items {
+        width: 100%;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items li {
+        font-size: 16px;
+        margin: 0.5rem 0;
+    }
+
+    .signUpBtn {
+        width: auto;
+        padding: 8px 16px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+                    /* Header */
+
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .left h1 {
+        font-size: 50px;
+    }
+
+    .header .left p {
+        font-size: 14px;
+    }
+
+    .header .left .btns {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .header .right {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .header .left .demoBtn {
+        margin-top: 1rem;
+    }
+
+    .header .right .traveller {
+        width: 100%;
+    }
+    
+
+                /* Category */
+
+
+    .cat .intro {
+        flex-direction: column;
+        margin-top: 12rem;
+    }
+
+    .section-header h1 {
+        font-size: 40px;
+    }
+
+    .cat .plus {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .cat .plus{
+        opacity: 0;
+    }
+
+    .servCards {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2%;
+    }
+
+    .servCards .card {
+        height: auto;
+        width: 100%;
+    }
+
+    .flightCard img {
+        top: -15%;
+    }
+
+    .flightCard h4,
+    .flightCard h6 {
+        top: -25%;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cat .cardContainer .icon {
+        opacity: 0;
+    }
+
+    
+                /* Destinations */
+
+.destinations {
+    text-align: center;
+    margin-top: 12rem;
+
+}
+
+.all-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+
+                /* Bookings */
+
+
+.bookings{
+    margin-top: 12rem;
+}     
+
+.bookings .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bookings .container .left{
+    width:100%;
+}
+
+.bookings .process{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.bookings .right{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+                /* Testimonials */
+
+.testimonial{
+    margin-top: 12rem;
+    align-items: center;
+    gap: 4rem;
+}
+
+.testimonial .container{
+    flex-direction: column;
+}
+
+.testimonial .left{
+    width: 100%;
+}
+
+.testimonial .left h6{
+    text-align: center;
+}
+
+.testimonial .left .dots{
+    justify-content: center;
+}
+
+
+.testimonial .right{
+    width: 0%;
+}
+
+
+                /* Hotels */
+
+
+.hotels{
+    margin-top: 12rem;
+}
+
+.hotels .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+                /* Contacts */
+
+.contact {
+    margin-top: 12rem;
+}
+
+.contact .card {
+    border-radius: 50px;
+}
+
+.contact .card .content {
+     align-items: center;
+}
+
+.contact .card .content h3 {
+    font-size: 28px;
+}
+
+.contact .card .form {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
+}
+
+.email-input-wrapper input {
+        width: 100%;
+}
+
+.contact .form button {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+}
+
+.contact .card .plus {
+    visibility: hidden;
+    
+}
+
+
+                /* Footer */
+
+
+footer .container{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 12rem;
+}
+
+footer .container .brand h2{
+    font-size: 44px;
+    text-align: center;
+}
+
+footer .container .brand p{
+    font-size: 13px;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 3rem;
+}
+
+footer .container h3{
+    font-size: 28px;
+    text-align: center;
+}
+
+footer .container .items{
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+footer .container .social .icon{
+    margin-top: 3rem;
+    margin-left: 30%;
+
+}
+
+footer .container .app{
+    margin-top: 3rem;
+    margin-left: 30%;
+}
+
+footer .container h6{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+footer h5{
+    font-size: 18px;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+}
+
+
+        /* Media Queries for Mobile Sizes */
+
+@media (max-width: 576px) {
+
+
+                /* Nav */
+
+ nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-items {
+        width: 100%;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .signUpBtn {
+        margin-top: 1rem;
+    }
+
+                /* Header */
+
+    .header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header .left {
+        margin: 2rem 1rem;
+    }
+
+    .header .left h1 {
+        font-size: 40px;
+    }
+
+    .header .left p {
+        font-size: 14px;
+    }
+
+    .header .left .btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .header .right {
+        margin: 2rem 0;
+        width: 80%;
+    }
+
+    .header .right .traveller {
+        width: 100%;
+    }
+
+    .plane {
+        display: none;
+    }
+            /* Category */
+
+
+.cat .intro {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+
+    .section-header h1 {
+        font-size: 28px;
+    }
+
+    .section-header h6 {
+        font-size: 8px;
+    }
+
+    .cat .plus {
+        display: none;
+    }
+
+    .servCards {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+        gap: 2rem;
+    }
+
+    .servCards .card {
+        width: 40%;
+        height: auto;
+    }
+
+    .flightCard img {
+        top: 0;
+    }
+
+    .flightCard h4,
+    .flightCard h6 {
+        top: 0;
+    }
+
+    .cat .cardContainer .icon {
+        display: none;
+    }
+
+
+            /* Destinations */
+
+
+.destinations {
+     width: 80%;
+     text-align: center;
+}
+
+            
+.all-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.destinations .card {
+    max-width: 90%;
+    height: auto;
+}
+
+.destinations .card .img {
+    height: 250px;
+}
+
+.destinations .card .img img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.destinations .decore {
+    bottom: 20%;
+}
+
+.destinations .decore img {
+    margin-left: 70%;
+}
+
+
+            /* Bookings */
+
+
+ .bookings .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .bookings .container .left,
+    .bookings .right {
+        width: 90%;
+    }
+
+    .bookings .right .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .bookings .right .img img {
+        width: 90%;
+        height: auto;
+    }
+
+    .bookings .right .card .mini-card {
+        left: 5%;
+        bottom: 5%;
+    }
+
+
+            /* Testimonials */
+
+.testimonial .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial .left {
+        width: 70%;
+        text-align: center;
+    }
+
+    .testimonial .right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .testimonial .right .card {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+    }
+
+    .testimonial .right .card img {
+        top: -25px;
+        left: -25px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial .right .card .card-text {
+        margin: 2% 5%;
+    }
+
+    .testimonial .right .card .inner-card {
+        left: 5%;
+        width: 90%;
+        transform: translateY(-50%);
+    }
+
+    .testimonial .right .arrow {
+        transform: translateY(120px);
+    }
+
+    .testimonial .left h1 {
+        font-size: 20px;
+    }
+
+    .testimonial .left h6 {
+        font-size: 8px;
+    }
+
+    .testimonial .right .card .card-text p {
+        font-size: 6px;
+        line-height: 28px;
+    }
+
+    .testimonial .right .card .card-text h4 {
+        font-size: 9px;
+    }
+
+    .testimonial .right .card .card-text h6 {
+        font-size: 6px;
+    }
+
+    .testimonial .left .dots p {
+        font-size: 50px;
+    }
+
+    .testimonial .left .dots .black {
+        color: #080809;
+    }
+
+    .testimonial .right .arrow {
+        display: none; 
+    }
+
+
+            /* Hotels */
+
+
+ .hotels .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .hotels .img img {
+        width: 100%; 
+        height: auto;
+    }
+            /* Contacts */
+
+.contact .card {
+        margin: 5%;
+        height: auto;
+        border-radius: 20px; 
+        width: 80%;
+    }
+
+    .contact .card .content h3 {
+        font-size: 18px;
+    }
+
+    .contact .card .form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .email-input-wrapper input {
+        width: 80%; 
+        height: 50px; 
+    }
+
+    .contact .form button {
+        width: 80%;
+        margin-top: 10px; 
+    }
+
+    .contact .fa-paper-plane {
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+        top: -15px;
+        right: -15px;
+    }
+
+    .contact .card .plus {
+        right: -10%;
+        bottom: -10%;
+    }
+
+
+            /* Footer */
+
+
+footer .container{
+    display: flex;
+    margin: 8%;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+footer .container .brand h2{
+    font-size: 44px;
+    font-weight:400;
+    line-height: 100%;
+    color: #181E4B;
+}
+
+footer .container .brand p{
+    font-size: 13px;
+    font-weight:400;
+    line-height: 125%;
+    color: var(--primary-color);
+    margin-top: 5%;
+    width: 60%;
+}
+
+footer .container h3{
+    font-size: 21px;
+    font-weight:700;
+    line-height: 125%;
+    color: #080809;
+}
+
+footer .container h6{
+    font-size: 18px;
+    font-weight:400;
+    line-height: 125%;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+footer .container .items{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+footer .container .app{
+    margin-top: 0.5rem;
+}
+
+footer .container .social .icon{
+    margin-left: -5%;
+}
+
+footer h5{
+    text-align: center;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 125%;
+    color: var(--primary-color);
+    margin: 5%;
+}
+
+}
