@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #5E6282;
     --secondary-color: #84829A; 
